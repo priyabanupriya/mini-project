@@ -1,0 +1,82 @@
+body{
+    background: #e5e5e5;
+
+}
+.registration{
+    height: 470px;
+    width: 330px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 10px gray, inset -8px -8px
+                10px white,-8px -8px 10px white,8px 8px 10px gray;
+    background: #e5e5e5;
+    margin: 40px auto 0px auto;
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: rgb(192, 3, 107);
+}
+svg{
+    width: 80px;
+    height: 40px;
+    color: rgb(21, 22, 24);
+
+}
+
+label{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+.login{
+    padding: 0px 30px;
+}
+
+input{
+    width: 260px;
+    height: 23px;
+    outline: none;
+    border: 0px;
+    box-shadow: inset 4px 4px 2px gray,inset -6px -6px 7px white;
+    background: #e5e5e5;
+    border-radius: 20px;
+    text-indent: 10px;
+    cursor: pointer;
+}
+button{
+    width: 160px;
+    height: 30px;
+    margin: 24px 0px 0px 55px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: arial;
+    color: rgb(180,0,255);
+    outline: none;
+    border: 0px;
+    box-shadow:  4px 4px 6px gray, -4px 4px 6px white;
+}
+
+button:hover{
+    box-shadow:inset 4px 4px 6px gray, inset -4px -4px 6px white;
+}
+
+.forget{
+    margin: 2px 70px;
+
+}
+p{
+    text-align: center;
+    font-family: arial;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.registration:hover{
+    transition: 5s;
+    border-radius: 0px;
+}

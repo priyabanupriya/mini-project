@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18191f;
+}
+ul{
+    position: relative;
+    display: flex;
+}
+li{
+    list-style: none;
+}
+input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    z-index: 99;
+}
+div{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background-color: #18191f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    cursor: pointer;
+    margin: 0 40px;
+    border-radius: 20px;
+    box-shadow: -1px -1px 4px rgba(255,255,255,0.05)
+                4px 4px 6px rgba(0,0,0,0.2)
+                inset -1px -1px 4px rgba(255,255,255,0.05)
+                 inset -1px -1px 4px rgba(255,255,255,0.05);
+}
+input:checked ~ div{
+    color: green;
+    text-shadow: 0 0 15px green, 0 0 25px green, 0 0 50px green ;
+    animation: light 1.5s linear infinite;
+
+}
+@keyframes light{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        
+    }
+}

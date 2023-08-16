@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+
+}
+body{
+    background-image: url("nat.jpg");
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color:coral;
+}
+span{
+    color: rgb(0, 172, 134);
+    font-size: 1.5rem;
+    padding-left: 20px;
+    line-height: 50px;
+}
+.nav ul{
+    float: right;
+    margin-right: 20px;
+    
+} 
+.nav ul li{
+    display: inline;
+    margin: 0 10px;
+    line-height: 50px;
+} 
+.nav ul li a{
+    color: white;
+    padding: 15px 10px;
+
+}
+.nav ul li a:hover{
+    color:rgb(19,153,146);
+    border-bottom: 2px solid rgb(19, 153, 146);
+}
+
+
+@media (max-width:768px){
+    .nav ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:black;
+        text-align: center;
+        padding: 0;
+        top: 50px;
+        left: -100%;
+        transition: 2s;
+        
+    }
+    .nav ul li{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+.nav ul li a{
+    border: none;
+    
+}
+.nav ul li:hover{
+    background-color: yellow;
+}
+.nav ul li a:hover{
+    border: none;
+}
+.nav ul li:hover a{
+    color: white;
+}
+.nav ul.slide{
+    left: 0;
+    transition: 2s;
+}
+.hamburger{
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+}
+.hamburger .line{
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+   
+    display: block;
+}
+
+}
